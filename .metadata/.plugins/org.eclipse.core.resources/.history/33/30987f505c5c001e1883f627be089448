@@ -1,0 +1,37 @@
+package org.madan.Messenger.resource;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.List;
+
+import org.madan.Messenger.model.Messages;
+import org.madan.Messenger.repository.MessageRepository;
+import org.madan.Messenger.service.MessageService;
+
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("/messages")
+public class MessageResource {
+
+	MessageService msgService = new MessageService();
+
+	@GET	@Produces(MediaType.APPLICATION_JSON)
+	public Collection<Messages> getAllMessages() {
+      return msgService.getAllMessages();
+	}
+
+	@GET
+	@Path("{messageId}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Messages getOneMessage(@PathParam("messageId") Long messageId) {
+		return msgService.getMessage(messageId);
+	}
+	
+	
+}

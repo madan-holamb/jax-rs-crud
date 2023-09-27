@@ -1,0 +1,16 @@
+package com.restapi.service;
+
+import com.restapi.model.Messages;
+
+import java.util.Date;
+import java.util.List;
+
+public class MessageService {
+  
+	
+	public List<Messages> getAllMessages(){
+		Messages m1 = new Messages(1l, "msg 1", new Date(), "Madan");
+		Messages m2 = new Messages(2l, "msg 2", new Date(), "Madan2");
+	}
+	
+}

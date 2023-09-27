@@ -1,0 +1,5 @@
+package org.madan.Messenger.service;
+
+public class ProfileService {
+
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.ApplicationPath"/>
+    <fullyQualifiedTypeName name="org.madan.Messenger.Test"/>
+    <fullyQualifiedTypeName name="jakarta.xml.bind.annotation.XmlRootElement"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.restapi.model.Profile"/>
+    <fullyQualifiedTypeName name="com.restapi.repository.MessageRepository"/>
+    <fullyQualifiedTypeName name="org.glassfish.jersey.message.internal.TracingInfo.Message"/>
+    <fullyQualifiedTypeName name="com.restapi.service.MessageService"/>
+    <fullyQualifiedTypeName name="com.restapi.model.Messages"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.GET"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.Past"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.madan.Messenger.service.MessageService"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.POST"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.PUT"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.Consumes"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.DELETE"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.Path"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.Produces"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.core.MediaType"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.PathParam"/>
+    <fullyQualifiedTypeName name="org.madan.Messenger.model.Messages"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="org.madan.Messenger.repository.MessageRepository"/>
+    <fullyQualifiedTypeName name="org.madan.Messenger.service.ProfileService"/>
+    <fullyQualifiedTypeName name="org.madan.Messenger.model.Profile"/>
+</qualifiedTypeNameHistroy>

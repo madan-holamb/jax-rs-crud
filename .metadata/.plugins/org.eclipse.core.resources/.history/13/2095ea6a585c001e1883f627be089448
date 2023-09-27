@@ -1,0 +1,46 @@
+package org.madan.Messenger.service;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+import org.madan.Messenger.model.Messages;
+import org.madan.Messenger.repository.MessageRepository;
+
+public class MessageService {
+  
+	private Map<Long, Messages> messageMap = MessageRepository.getMessages();
+	
+	public List<Messages> getAllMessages(){
+		List<Messages> list = (List<Messages>) messageMap.values();
+		return list;
+	}
+	
+	public Messages getMessage(long id) {
+		return messageMap.get(id);
+	}
+	
+	public Messages addMessages(Messages msg) {
+		msg.setId(messageMap.size()+1);
+		messageMap.put(msg.getId(), msg);
+		
+		return msg;
+	}
+	
+	public Messages updateMessages(Messages msg) {
+		if(msg.getId() <= 0) {
+			return null;
+		}
+		messageMap.put(msg.getId(), msg);
+		
+		return msg;
+	}
+	
+	public Messages removeMessages(long id) {
+		return messageMap.remove(id);
+		
+	}
+	
+	
+	
+}

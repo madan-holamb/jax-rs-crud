@@ -1,0 +1,25 @@
+package org.madan.Messenger.resource;
+
+import java.util.Collection;
+import java.util.List;
+
+import org.madan.Messenger.model.Messages;
+import org.madan.Messenger.service.MessageService;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("/messages")
+public class MessageResource {
+	
+	MessageService msg = new MessageService();
+	
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public Collection<Messages> getAllMessages(){
+		return  msg.getAllMessages();
+	}
+
+}

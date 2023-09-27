@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\codepractice\restapi\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3329285052.index
+4274048135.index
+1240080598.index
+868736169.index
+1847104191.index
+2155317584.index

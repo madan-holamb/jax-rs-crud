@@ -1,0 +1,7 @@
+
+Sep 26, 2023 11:59:51.43 NEW SESSION
+Sep 26, 2023 11:59:51.46 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sep 26, 2023 12:05:49.49 [2160:11792:0926/120549.491:ERROR:device_event_log_impl.cc(222)] [12:05:49.489] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Sep 26, 2023 12:17:43.65 [2160:11280:0926/121743.643:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Sep 26, 2023 12:22:46.51 [2160:11280:0926/122246.515:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sep 26, 2023 12:58:46.41 [2160:11280:0926/125846.404:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2

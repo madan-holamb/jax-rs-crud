@@ -1,0 +1,24 @@
+package org.madan.Messenger.repository;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class MessageRepository {
+   
+	private static Map<Long, Messages> messages = new HashMap<Long, Messages>();
+	
+	private static Map<Long, Profile> profiles = new HashMap<Long, Profile>();
+	
+	
+
+	public static Map<Long, Messages> getMessages() {
+		return messages;
+	}
+
+	public static Map<Long, Profile> getProfiles() {
+		return profiles;
+	}
+	
+	
+}

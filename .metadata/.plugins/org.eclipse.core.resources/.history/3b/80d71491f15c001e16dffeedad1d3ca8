@@ -1,0 +1,63 @@
+package org.madan.Messenger.resource;
+
+import java.util.Collection;
+
+import org.madan.Messenger.model.Messages;
+import org.madan.Messenger.service.MessageService;
+import org.madan.Messenger.service.ProfileService;
+
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.DELETE;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("/profiles")
+public class ProfileResource {
+
+	ProfileService profileService = new ProfileService();
+
+	@GET	@Produces(MediaType.APPLICATION_JSON)
+	public Collection<Messages> getAllMessages() {
+		return profileService.getAllMessages();
+	}
+
+	@GET
+	@Path("{messageId}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Messages getOneMessage(@PathParam("messageId") Long messageId) {
+		return profileService.getMessage(messageId);
+	}
+
+	@POST
+	@Path("addMessage")
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Messages addMessage(Messages msg) {
+		return profileService.addMessages(msg);
+	}
+
+	@PUT
+	@Path("{messageId}")
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Messages updateMessage(Messages message,@PathParam("messageId")long messageId) {
+		return profileService.updateMessages(message,messageId);
+	}
+
+	@DELETE
+	@Path("{deletemsg}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public String deleteMessage(@PathParam("deletemsg")long delid) {
+		return profileService.removeMessages(delid);
+
+	}
+
+
+
+
+}

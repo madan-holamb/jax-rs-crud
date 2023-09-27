@@ -1,0 +1,33 @@
+package org.madan.Messenger.resource;
+
+import java.util.Collection;
+
+import org.madan.Messenger.model.Messages;
+import org.madan.Messenger.service.MessageService;
+
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("/messages")
+public class MessageResource {
+
+	MessageService msg = new MessageService();
+
+	@GET	@Produces(MediaType.APPLICATION_JSON)
+	public String getAllMessages() {
+		return "Hellow From Messages";
+	}
+
+	@GET
+	@Path("{messageId}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Messages getOneMessage(@PathParam("messageId") Long messageId) {
+		return msg.getMessage(messageId);
+	}
+	
+	
+}

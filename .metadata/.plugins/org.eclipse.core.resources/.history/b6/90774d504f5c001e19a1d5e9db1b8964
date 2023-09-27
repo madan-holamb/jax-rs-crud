@@ -1,0 +1,25 @@
+package com.restapi.service;
+
+import com.restapi.model.Messages;
+import com.restapi.repository.MessageRepository;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+public class MessageService {
+  
+	private Map<Long, Messages> messageMap = MessageRepository.getMessages();
+	
+	public List<Messages> getAllMessages(){
+		Messages m1 = new Messages(1l, "msg 1", new Date(), "Madan");
+		Messages m2 = new Messages(2l, "msg 2", new Date(), "Madan2");
+		
+		List<Messages> list = new ArrayList<Messages>();
+		list.add(m1);
+		list.add(m2);
+		return list;
+	}
+	
+}
